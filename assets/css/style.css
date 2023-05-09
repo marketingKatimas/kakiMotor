@@ -300,7 +300,8 @@ input.check-toggle-round-flat:checked + label:after {
 
 /*-- Banner --*/
 .banner-background {
-  background-image: url("../assets/img/cover_photo_bg.jpg"); 
+/*   background-image: url("../assets/img/cover_photo_bg.jpg");  */
+  background-image: url("../img/home-one/service.jpg");
   max-width: 100%;
   background-position: top;
   background-color: #ea5b0c;
