@@ -303,7 +303,6 @@ input.check-toggle-round-flat:checked + label:after {
   background-image: url("../img/cover_photo_bg.jpg");
   background-position: top;
   background-color: #ea5b0c;
-  z-index: -1;
 }
 
 .banner-area {
