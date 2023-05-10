@@ -30,6 +30,9 @@ This files table contents are outlined below>>>>>
 */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
 /*-- Default CSS --*/
+html {
+  min-width: 100vh;
+}
 
 body {
   font-family: "Inter", sans-serif;
@@ -136,6 +139,11 @@ button:focus {
 
 .main-nav nav .navbar-nav .nav-item:hover a {
   color: #ea5b0c;
+}
+
+#lang_switch .switch {
+  margin-left: 150%;
+   
 }
 
 .main-nav nav .navbar-nav .nav-item a {
@@ -300,7 +308,9 @@ input.check-toggle-round-flat:checked + label:after {
 
 /*-- Banner --*/
 .banner-background {
+  /* background-image: url("../../../assets/img/cover_photo_bg.jpg"); */
   background-image: url("../img/cover_photo_bg.jpg");
+  max-width: 100%;
   background-position: top;
   background-color: #ea5b0c;
 }
@@ -390,14 +400,13 @@ input.check-toggle-round-flat:checked + label:after {
   border-radius: 50% 50% 0 0;
   opacity: 0;
   transition: 0.5s all ease;
-  z-index: -1;
+  z-index: -1; 
 }
 
 .cmn-btn .banner-btn-left:hover:before {
   opacity: 1;
   height: 100%;
-  border-radius: 0;
-}
+  border-radius: 0; }
 
 .cmn-btn .banner-btn-right {
   background-color: transparent;
@@ -1077,8 +1086,7 @@ input.check-toggle-round-flat:checked + label:after {
 }
 
 .parts-item .cmn-btn .banner-btn-left {
-  margin-right: 0;
-}
+  margin-right: 0; }
 
 /*-- End Parts --*/
 /*-- Engineer --*/
@@ -2177,8 +2185,7 @@ footer .footer-img {
 .banner-call .cmn-btn .banner-btn-left {
   color: #ea5b0c;
   background-color: #ffffff;
-  margin-right: 0;
-}
+  margin-right: 0; }
 
 /*-- End Banner Call --*/
 /*-- Quality --*/
@@ -2374,10 +2381,16 @@ footer .footer-img {
 
 .quality-area-four .quality-content .section-title h2 {
   color: #343434;
+  padding-left: 10px;
+}
+
+.quality-area-four .quality-content .section-title h4 {
+  padding-left: 10px;
 }
 
 .quality-area-four .quality-content .section-title p {
   color: #343434;
+  padding-left: 10px;
 }
 
 /*-- End Quality --*/
