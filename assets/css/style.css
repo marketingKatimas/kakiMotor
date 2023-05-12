@@ -30,9 +30,22 @@ This files table contents are outlined below>>>>>
 */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
 /*-- Default CSS --*/
-html {
-  min-width: 100vh;
+
+/* Hide the Bahasa Melayu text by default */
+.bm-text {
+  display: none;
 }
+
+/* Show the English text when the language preference is 'en' */
+[data-lang='en'] .en-text {
+  display: block;
+}
+
+/* Show the Bahasa Melayu text when the language preference is 'bm' */
+[data-lang='bm'] .bm-text {
+  display: block;
+}
+
 
 body {
   font-family: "Inter", sans-serif;
@@ -142,7 +155,7 @@ button:focus {
 }
 
 #lang_switch .switch {
-  margin-left: 100%;
+  margin-left: 80px;
    
 }
 
